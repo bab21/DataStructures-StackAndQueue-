@@ -9,6 +9,9 @@ public class MyQueue<K> {
 	public void enqueue(INode myNode) {
 		myLinkedList.append(myNode);
 	}
+	public INode dequeue() {
+		return myLinkedList.pop();
+	}
 	public INode peek() {
 		return myLinkedList.head;
 	}
