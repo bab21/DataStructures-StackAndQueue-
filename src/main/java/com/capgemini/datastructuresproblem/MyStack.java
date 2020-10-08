@@ -16,6 +16,17 @@ public class MyStack <K>{
 	public INode peek() {
 		return myLinkedList.head;
 	}
+	
+	//UC2..
+	public INode pop() {
+		INode poppedNode=myLinkedList.pop();
+		return poppedNode;
+	}
+	
+	//UC2..
+	public boolean isEmpty() {
+		return myLinkedList.head==null;
+	}
 	public void printMyStack() {
 		myLinkedList.printMyLinkedList();
 	}
